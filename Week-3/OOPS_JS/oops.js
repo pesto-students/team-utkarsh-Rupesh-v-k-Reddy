@@ -119,7 +119,7 @@ class SavingsAccount extends BankAccount {
 const checkingAccount = new CheckingAccount('123456789', 1000, 'John Doe');
 checkingAccount.deposit(500);
 checkingAccount.withdraw(200);
-console.log(checkingAccount.balance); // Output: 1300
+console.log(checkingAccount.balance); //  1300
 
 const savingsAccount = new SavingsAccount('987654321', 500, 'Jane Smith');
 savingsAccount.deposit(200);
