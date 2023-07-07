@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quote Generator">
+    <meta name="author" content="Rupesh">
+    <title>Quote Generator</title>
+    <link rel="icon" type="image/x-icon" href="style/Assets/favicon.ico">
+    <link rel="stylesheet"  href="./style/style.css">
+</head>
+<body>
+    <header>
+        <h1>Open Ai Quote Generator</h1>
+    </header>
+
+   <main>
+    <section class="maincontainer">
+        <input class="margincontainer widthcont" type="text" id="inputText"  placeholder="Enter the topic you want quotes on">
+        <button class="buttonCont buttoncont2" id="generate" onclick= "getvalues(document.getElementById('inputText').value) ">Generate</button>
+    </section>
+
+    <section class="loadingSection" id="loadingWheel">
+        <div class="loadingCircle">
+            <img class="loadImg" src="./style/Assets/load.png" alt="">
+            <h2>Generating...</h2>
+        </div>
+    </section>
+
+    <section>
+        <div class="dataPortion" id="quoteGen"></div>
+    </section>
+    
+
+   </main>
+   
+    <!-- Footer section -->
+    <footer class="footerPosition" id="footerPosition">
+        <h2>Created with 💙 by Rupesh Reddy</h2>
+    </footer>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
